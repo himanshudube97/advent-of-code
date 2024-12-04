@@ -1,7 +1,7 @@
 {
   "name": "advent-of-code",
   "version": "1.0.0",
-  "type": "module",
+  "type": "commonjs",
   "description": "",
   "main": "1stDay.js",
   "scripts": {
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/himanshudube97/advent-of-code/issues"
   },
-  "homepage": "https://github.com/himanshudube97/advent-of-code#readme"
+  "homepage": "https://github.com/himanshudube97/advent-of-code#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }
