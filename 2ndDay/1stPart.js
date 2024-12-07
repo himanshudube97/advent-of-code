@@ -15,11 +15,10 @@ fs.readFile(filePath, "utf8", (err, data) => {
     // Step 3: Split each row by space and map to an array of numbers
     const finalFormattedDataArray = rows.map((row) => row.split(" ").map(Number));
 
-    // Now parsedData is a 2D array: rows with variable number of columns
 
-    // Optionally return the parsed data (but async, so this may need handling)
+
+    //PART1.
     const checkFinal = () => {
-
         let tempSum = 0;
         outerLoop: for (let j = 0; j < finalFormattedDataArray.length; j++) {
             const currentArray = finalFormattedDataArray[j];
@@ -50,7 +49,8 @@ fs.readFile(filePath, "utf8", (err, data) => {
         return tempSum;
     };
     const finalSafeValues = checkFinal();
-    console.log(finalSafeValues, "final")
-    return finalSafeValues;
+    return finalSafeValues
+    
+
 });
 
